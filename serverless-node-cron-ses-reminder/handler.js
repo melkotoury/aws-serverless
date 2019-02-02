@@ -3,7 +3,10 @@
 module.exports.sendReminderDaily = (event, context, callback) => {
     
     var AWS = require('aws-sdk');
-    AWS.config.update({region:'us-east-1'});
+    AWS.config.update({
+        region: 'us-west-2'
+    });
+
     var ses = new AWS.SES();
     var fs = require('fs');
 
@@ -45,7 +48,7 @@ module.exports.sendReminderDaily = (event, context, callback) => {
 module.exports.sendReminderWeekend = (event, context, callback) => {
     
     var AWS = require('aws-sdk');
-    AWS.config.update({region:'us-east-1'});
+    AWS.config.update({region:'us-west-2'});
     var ses = new AWS.SES();
     var fs = require('fs');
 
