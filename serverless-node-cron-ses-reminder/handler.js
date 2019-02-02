@@ -9,7 +9,7 @@ module.exports.sendReminderDaily = (event, context, callback) => {
 
     var emailHtml = fs.readFileSync('./dailyReminder.html', 'utf-8');
 
-    var toAndFromAdress = 'verifiedemail@yourdomain.com'
+    var toAndFromAdress = 'melkotoury@gmail.com'
     var params = {
         Destination: {
             ToAddresses: [toAndFromAdress]
@@ -22,7 +22,7 @@ module.exports.sendReminderDaily = (event, context, callback) => {
                 }, 
                 Text: {
                     Charset: "UTF-8", 
-                    Data: "Remember to continue helping the Woof Garden in your Pluralsight course!"
+                    Data: "Remember to continue helping the community to know more about Serverless framework"
                 }
             }, 
             Subject: {
@@ -51,7 +51,7 @@ module.exports.sendReminderWeekend = (event, context, callback) => {
 
     var emailHtml = fs.readFileSync('./weekendReminder.html', 'utf-8');
 
-    var toAndFromAdress = 'verifiedemail@yourdomain.com'
+    var toAndFromAdress = 'melkotoury@gmail.com'
     var params = {
         Destination: {
             ToAddresses: [toAndFromAdress]
@@ -64,12 +64,12 @@ module.exports.sendReminderWeekend = (event, context, callback) => {
                 }, 
                 Text: {
                     Charset: "UTF-8", 
-                    Data: "Here's a weekend Remember that puppies are adorable!!"
+                    Data: "Here's a weekend Remember that Serverless stack is fun!!"
                 }
             }, 
             Subject: {
                 Charset: "UTF-8", 
-                Data: "Woof Garden Reminder"
+                Data: "Kato'sReminder"
             }
         },
         ReplyToAddresses: [toAndFromAdress],
