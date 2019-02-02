@@ -30,7 +30,7 @@ module.exports.sendReminderDaily = (event, context, callback) => {
             }, 
             Subject: {
                 Charset: "UTF-8", 
-                Data: "Woof Garden Reminder"
+                Data: "Kato's Daily Reminder"
             }
         },
         ReplyToAddresses: [toAndFromAdress],
@@ -72,7 +72,7 @@ module.exports.sendReminderWeekend = (event, context, callback) => {
             }, 
             Subject: {
                 Charset: "UTF-8", 
-                Data: "Kato'sReminder"
+                Data: "Kato's Weekend Reminder"
             }
         },
         ReplyToAddresses: [toAndFromAdress],
